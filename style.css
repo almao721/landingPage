@@ -225,29 +225,32 @@ body{
   color:#F5F5F5;
 }
 
-/* contact us*/
+/* CONTACT */
+
 #contact{
-  padding:100px;
+  padding:80px 20px;
 }
 
 .contact-card{
   width:700px;
-  max-width:200%;
-  height:330px;
+  max-width:100%;
   margin:auto;
   background:#1e1e1e;
   border:none;
+  border-radius:20px;
+  height:auto;
+  padding:10px;
 }
 
 .form-control{
   background:#797979;
   border:none;
-  color:#ffffff;
+  color:#fff;
 }
 
 .form-control:focus{
   background:#696969;
-  color:#ffffff;
+  color:#fff;
   box-shadow:none;
 }
 
@@ -257,114 +260,141 @@ body{
   border:none;
   border-radius:10px;
   background:#f5f5f5;
-  color:#111111;
+  color:#111;
   font-weight:600;
   transition:.3s;
 }
 
 .tombol-orang-kece:hover{
-  background:#ffffff;
+  background:#fff;
   transform:translateY(-3px);
 }
 
-/* footer */
+/* FOOTER */
+
 footer{
   background:#111111;
-  padding:50px 0;
+  padding:40px 20px;
+  text-align:center;
 }
 
-.footer-menu{
-  list-style:none;
-  padding:0;
-}
-
-.footer-menu li{
-  margin-bottom:10px;
+footer h5{
+  margin-bottom:20px;
 }
 
 footer a{
-  color:#F5F5F5;
+  color:#f5f5f5;
   text-decoration:none;
+  font-size:1.2rem;
   transition:.3s;
 }
 
 footer a:hover{
-  color:#BDBDBD;
+  color:#bdbdbd;
 }
 
 footer i{
+  font-size:1.5rem;
   margin-right:8px;
 }
 
 hr{
-  border-color:#333333;
+  border-color:#333;
 }
 
-/* responsive */
+/* MOBILE */
+
 @media(max-width:768px){
-  
+
   .hirrono{
     text-align:center;
+    padding-top:120px;
+    padding-bottom:60px;
+    min-height:auto;
   }
-  
+
   .hirrono h1{
-    font-size:2.2rem;
+    font-size:2.5rem;
   }
-  
+
+  .hirrono p{
+    font-size:1rem;
+  }
+
   .profile-img{
-    width:240px;
-    height:240px;
-  }
-  
-  #about .section-title{
-    font-size:2.2rem;
-  }
-  
-}
-@keyframes ngambang{
-  100%,0%{
-    transform:translateY(0);
-  }
-  50%{
-    transform:translateY(-15px);
-  }
-}
-
-@font-face{
-  font-family: "Martin";
-  src: url("./Assets/boston/BOSTON\ CAPS.otf");
-}
-
-@keyframes glow{
-  from{
-    text-shadow:
-      0 0 5px #fff,
-      0 0 15px #15772880,
-      0 0 30px #0e7222b3,
-      0 0 50px #ff000026;
-    }
-
-  to{
-    text-shadow:
-      0 0 10px #fff,
-      0 0 25px #0f8326cc,
-      0 0 50px #11932b,
-      0 0 80px #239a3be6,
-      0 0 100px #ff000040;
-  }
-}
-
-@keyframes imgGlow{
-  from{
-    filter:
-      drop-shadow(0 0 15px rgba(25,205,61,.4))
-      drop-shadow(0 0 30px rgba(255,0,0,.15));
+    width:250px;
+    height:auto;
   }
 
-  to{
-    filter:
-      drop-shadow(0 0 30px rgba(25,205,61,.8))
-      drop-shadow(0 0 60px rgba(25,205,61,.6))
-      drop-shadow(0 0 80px rgba(255,0,0,.3));
+  .dekor1{
+    width:100px;
+    left:10px;
   }
+
+  .dekor2{
+    width:90px;
+    right:0;
+    bottom:0;
+  }
+
+  .dekor3{
+    width:80px;
+    top:-20px;
+    right:10px;
+  }
+
+  #about{
+    padding:70px 20px;
+  }
+
+  #about h2{
+    font-size:2rem;
+  }
+
+  #about p{
+    font-size:.95rem;
+  }
+
+  .section-title{
+    font-size:2rem;
+  }
+
+  .what-cortis-do{
+    display:none;
+  }
+
+  .poyoyoi-title{
+    width:70px;
+  }
+
+  .blue-lips{
+    width:70px;
+    right:0;
+    bottom:-20px;
+  }
+
+  .project-card img{
+    height:220px;
+  }
+
+  #contact{
+    padding:60px 20px;
+  }
+
+  #contact .section-title{
+    font-size:1.8rem;
+    white-space:nowrap;
+    margin-bottom:25px;
+  }
+
+  .contact-card{
+    width:90%;
+    max-width:400px;
+    margin:auto;
+  }
+
+  footer{
+    text-align:center;
+  }
+
 }
