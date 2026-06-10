@@ -26,7 +26,7 @@ body{
   color:#ffffff !important;
 }
 
-/* Hero */
+/* Hero superhiro*/
 .hirrono{
   min-height:100vh;
   display:flex;
@@ -34,7 +34,7 @@ body{
   padding-top:80px;
 }
 
-.hirrono .col-lg-,
+.hirrono .col-lg-5,
 .hirrono .col-lg-7{
   position:relative;
 }
@@ -45,10 +45,12 @@ body{
   justify-content:center;
 }
 
+
 .hirrono h1{
-  font-size:3.5rem;
-  font-weight:700;
-  margin-bottom:15px;
+  font-family: "Martin";
+  font-size:600%;
+  font-weight: normal;
+  margin-bottom: 5px;
 }
 
 .hirrono p{
@@ -71,7 +73,7 @@ body{
   width:180px;
   position:absolute;
   top:20px;
-  left:70px;
+  left:60px;
   z-index:1;
   opacity:.9;
   animation:ngambang 5s infinite;
@@ -80,8 +82,8 @@ body{
 .dekor2{
   width:160px;
   position:absolute;
-  right:-80px;
-  bottom:20px;
+  right:-65px;
+  bottom:-10px;
   z-index:1;
   opacity:.9;
   animation:ngambang 4s infinite;
@@ -90,8 +92,8 @@ body{
 .dekor3{
   width:140px;
   position:absolute;
-  top:-70px;
-  right:50px;
+  top:-80px;
+  right:-20px;
   z-index:1;
   opacity:.9;
   animation:ngambang 6s infinite;
@@ -107,6 +109,7 @@ body{
   position:relative;
   z-index:10;
 }
+
 /*SVG alias Get Waves */
 .wave-top,
 .wave-bottom{
@@ -235,13 +238,13 @@ body{
 }
 
 .form-control{
-  background:#111111;
+  background:#797979;
   border:none;
   color:#ffffff;
 }
 
 .form-control:focus{
-  background:#111111;
+  background:#696969;
   color:#ffffff;
   box-shadow:none;
 }
@@ -323,4 +326,9 @@ hr{
   50%{
     transform:translateY(-15px);
   }
+}
+
+@font-face{
+  font-family: "Martin";
+  src: url("./Assets/boston/BOSTON\ CAPS.otf");
 }
