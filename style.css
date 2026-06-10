@@ -84,7 +84,7 @@ body{
 .dekor2{
   width:160px;
   position:absolute;
-  right:-65px;
+  right:-155px;
   bottom:-10px;
   z-index:1;
   opacity:.9;
@@ -127,6 +127,7 @@ body{
 /* About */
 #about{
   background:#111111;
+  margin-top:-5px;
   padding:90px 20px;
   text-align:center;
 }
@@ -163,7 +164,7 @@ body{
   width:120px;
   position:absolute;
   top:-60px;
-  right:20%;
+  right:15%;
   animation:ngambang 3s ease-in-out infinite;
 }
 
@@ -404,7 +405,7 @@ hr{
 
 }
 
-/* animasi */
+/* animasi kelapkelip */
 @keyframes glow{
   from{
     text-shadow:
@@ -455,4 +456,81 @@ hr{
 @font-face{
   font-family: "Martin";
   src: url("./Assets/boston/BOSTON\ CAPS.otf");
+}
+
+@media(max-width:768px){
+
+.hirrono{
+    min-height:85vh;
+    padding-top:90px;
+    text-align:center;
+}
+
+.profile-img{
+    width:280px;
+    height:auto;
+}
+
+.hirrono h1{
+    font-size:3.2rem;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+.hirrono p{
+    font-size:1rem;
+}
+
+.dekor1{
+    width:90px;
+    top:30px;
+    left:20px;
+}
+
+.dekor2{
+    width:95px;
+    right:-10px;
+    bottom:80px;
+}
+
+.dekor3{
+    width:90px;
+    top:120px;
+    right:0;
+}
+
+}
+
+/* Project Masterpiece mobile */
+@media(max-width:768px){
+  .masterpiece-title .poyoyoi-title{
+      position:absolute;
+      top:35px;
+      right:5px;
+      width:95px;
+      animation:ngambang 5s ease-in-out infinite;
+  }
+
+  #project .what-cortis-do{
+      display:block;
+      width:110px;
+      position:absolute;
+      left:0%;
+      top:43%;
+      transform:translateY(-50%);
+      animation:ngambang 5s ease-in-out infinite;
+      pointer-events:none;
+      z-index:10;
+  }
+
+  #project .blue-lips{
+      display:block;
+      width:100px;
+      position:absolute;
+      right:0%;
+      top:90%;
+      animation:ngambang 6s ease-in-out infinite;
+      pointer-events:none;
+      z-index:10;
+  }
 }
