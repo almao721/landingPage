@@ -178,14 +178,19 @@ body{
   pointer-events:none;
 }
 
+#project .col-lg-5,
+#project .col-md-6{
+    position: relative;
+}
+
 .blue-lips{
-  width:100px;
-  position:absolute;
-  right:-35px;
-  bottom:-45px;
-  z-index:3;
-  animation:ngambang 6s ease-in-out infinite;
-  pointer-events:none;
+    width:100px;
+    position:absolute;
+    right:-35px;
+    bottom:-45px;
+    z-index:10;
+    animation:ngambang 6s ease-in-out infinite;
+    pointer-events:none;
 }
 
 .project-card{
@@ -397,4 +402,57 @@ hr{
     text-align:center;
   }
 
+}
+
+/* animasi */
+@keyframes glow{
+  from{
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #27332d,
+      0 0 20px #388c65,
+      0 0 40px #46564e;
+  }
+
+  to{
+    text-shadow:
+      0 0 10px #fff,
+      0 0 20px #4cff9f,
+      0 0 40px #4cff9f,
+      0 0 80px #4cff9f;
+  }
+}
+
+@keyframes imgGlow{
+  from{
+    filter:
+      drop-shadow(0 0 10px #27332d)
+      drop-shadow(0 0 20px #388c65);
+  }
+
+  to{
+    filter:
+      drop-shadow(0 0 20px #4cff9f)
+      drop-shadow(0 0 40px #4cff9f);
+  }
+}
+
+@keyframes ngambang{
+  0%{
+    transform:translateY(0);
+  }
+
+  50%{
+    transform:translateY(-15px);
+  }
+
+  100%{
+    transform:translateY(0);
+  }
+}
+
+/* font */
+@font-face{
+  font-family: "Martin";
+  src: url("./Assets/boston/BOSTON\ CAPS.otf");
 }
